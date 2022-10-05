@@ -1,2 +1,2 @@
-# Praktikum-2
+# PemWeb01
 Percobaan Praktikum Kedua
