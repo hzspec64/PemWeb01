@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDAFB1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main{
+    display: flex;
+    flex: 1px;
+}
+
+#main > aside{
+    background-color: #62B7B6;
+    flex: 1;
+    order: 1;
+}
+
+#main > article{
+    background-color: #FA7A7B;
+    flex: 1;
+    order: 2;
+}
+
+header, footer{
+    background-color: #98D1C7;
+}
+
+header, footer, article, aside{
+    padding: 1em;
+    margin: 1em;
+}
+
+#main2{ 
+    display: flex; 
+    flex-direction: row; 
+    background-color: #D6D5D5;
+    justify-content: space-between;
+}
