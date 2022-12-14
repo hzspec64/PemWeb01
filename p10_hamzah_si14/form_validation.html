@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="form_val.css">
+</head>
+<body>
+	<center><h2>FORM VALIDATION</h2></center>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Pelanggan:</label>
+				<input type="text" name="nama" id="nama" minlength="0" maxlength="40" required/>
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" required/>
+			</div>
+			<div>
+				<label>Jam Keberangkatan:</label>
+				<input type="time" name="jam keberangkatan" id="jamber" min="00:00" max="23:59" required/>
+			</div>
+			<div>
+				<label>Tujuan Keberangkatan:</label>
+				<input type="text" name="tujuan keberangkatan" id="tunber" required/>
+			</div>
+			<div>
+				<label>Jumlah Tiket:</label>
+				<input type="number" name="jumlah tiket" id="jutik" required/>
+			</div>
+			<div>
+				<input type="submit" value="Submit" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		id_tamp.innerText = id_nama.value +", "+ id_email.value +", "+ id_jamber.value +", "+ id_tunber.value +", "+ id_jutik.value;
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var jamber = document.getElementById("jamber").value;
+		var tunber = document.getElementById("tunber").value;
+		var jutik = document.getElementById("jutik").value;
+		if (nama != "" && email !="" && jamber != tunber !="") {
+			return true;
+		}else{
+			alert("Error : Data Tidak Valid");
+		}
+	}
+</script>
+</html>
