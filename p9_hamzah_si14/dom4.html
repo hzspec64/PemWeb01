@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="angka1"  onchange="hasil();" />
+        <h1>+</h1>
+        <input type="text" id="angka2"  onchange="hasil();" />
+        <h1>=</h1>
+        <input type="text" id="total" />
+    </form>
+
+    <script>
+        function hasil() {
+            var angka1 = document.getElementById("angka1").value;
+            var angka2 = document.getElementById("angka2").value;
+            var hasil = parseInt(angka1) + parseInt(angka2);
+            
+            if (!isNaN(hasil)) {
+            document.getElementById("total").value = hasil;}
+        }   
+    </script>
+</body>
+</html>
